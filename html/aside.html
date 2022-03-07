@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="../../내가 작성한 파일/main.css" />
     <style>
-      /* 스타일 작성 */
-      /* .sponsor {
+      .sponsor {
         position: absolute;
         width: 396px;
         height: 100%;
@@ -19,7 +18,99 @@
         background: #f5f5f5;
         border: 1px solid #eeeeee;
         box-sizing: border-box;
-      } */
+      }
+
+      .sponsor > h2 {
+        font-family: Source Han Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
+        color: #015bbb;
+        margin: 54px 0 0 36px;
+      }
+
+      .sponsor-inform {
+        list-style: none;
+        padding-left: 25px;
+      }
+
+      .sponsor-inform > li {
+        display: flex;
+        padding-left: 24px;
+        margin-right: 13px;
+      }
+
+      .embassy {
+        flex-direction: column;
+        width: 296px;
+        height: 129px;
+        background: #ffffff;
+        justify-content: center;
+        margin-top: 15px;
+      }
+
+      .embassy > p {
+        margin: 0.1px;
+      }
+
+      .embassy > p:nth-child(1) {
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
+        color: #333333;
+      }
+
+      .embassy > p:nth-child(2),
+      .embassy > p:nth-child(3) {
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #333333;
+      }
+
+      .sponsor-inform > li:nth-child(n + 2) {
+        display: flex;
+        align-items: center;
+        width: 296px;
+        height: 80px;
+        margin-top: 8px;
+        background: #ffffff;
+      }
+
+      .sponsor-inform > li:nth-child(2) {
+        margin-top: 13px;
+      }
+
+      .sponsor-inform > li:nth-child(n + 2) > div {
+        margin-left: 18px;
+      }
+
+      .sponsor-inform > li:nth-child(n + 2) > div > p {
+        margin: 0;
+      }
+
+      .sponsor-inform > li:nth-child(n + 2) > div > p:nth-child(1) {
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
+        color: #333333;
+      }
+
+      .sponsor-inform > li:nth-child(n + 2) > div > p:nth-child(2) {
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #767676;
+      }
     </style>
   </head>
 
