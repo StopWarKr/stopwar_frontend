@@ -1,61 +1,236 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>StopWar</title>
-		<link rel="stylesheet" href="../css/reset.css" />
-		<link rel="stylesheet" href="../css/font.css" />
-		<style>
-			/* 스타일 작성 */
-		</style>
-	</head>
 
-	<body>
-		<!-- skip : 윤우상 -->
-		<ul class="skip">
-			<li><a href="#news">뉴스 바로가기</a></li>
-			<li><a href="#sponsor">후원정보 바로가기</a></li>
-		</ul>
-		<!-- //skip -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StopWar</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/font.css" />
+  <style>
+    .news-card-list li:last-child {
+      margin-bottom: 50px;
+    }
 
-		<!-- header : 김초연 , 김상돈 -->
-		<header>
-			<h1>StopWar</h1>
-		</header>
-		<!-- //header -->
+    .news-card {
+      display: flex;
+      margin-bottom: 40px;
+      cursor: pointer;
+      transition: opacity 0.2s ease-in-out;
+    }
 
-		<!-- main : 뉴스 -->
-		<main id="news">
-			<!-- 제목 및 검색 : 유현세 -->
-			<h2>뉴스정보</h2>
+    .news-card:hover {
+      opacity: 0.5;
+    }
 
-			<!-- //제목 및 검색  -->
+    .card-img-frame {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      min-width: 184px;
+      height: 120px;
+      margin-right: 24px;
+      border-color: #ddd;
+      border-radius: 20px;
+      background: #eee;
+      box-sizing: border-box;
+    }
 
-			<!-- 카테고리 : 조미진, 최성이 -->
-			<!-- //카테고리 -->
+    img {
+      width: 100%;
+    }
 
-			<!-- 뉴스카드 : 윤수영, 박지윤, 지다혜 -->
-			<ul>
-				<li><article></article></li>
-			</ul>
-			<!-- //뉴스카드 -->
-		</main>
-		<!-- //main : 뉴스 -->
+    .card-tit {
+      display: block;
+      overflow: hidden;
+      margin: 7px 0;
+      font-size: 24px;
+      font-weight: bold;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
 
-		<!-- aside : 후원정보 :박유진, 김경민 -->
-		<aside class="sponsor"></aside>
-		<!-- //aside : 후원정보 -->
+    .card-desc {
+      display: -webkit-box;
+      overflow: hidden;
+      margin-bottom: 15px;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
 
-		<!-- footer : 지다혜 -->
-		<footer>
-			<!-- 참여자이름, 메일주소 -->
-		</footer>
-		<!-- //footer -->
+    .card-date,
+    .card-source {
+      color: #767676;
+      font-size: 14px;
+    }
 
-		<!-- 스크립트 연결 -->
+    .card-date::after {
+      content: "|";
+      margin-left: 5px;
+    }
 
-		<!-- // 스크립트 연결 -->
-	</body>
+    .button-more {
+      display: block;
+      width: 180px;
+      height: 32px;
+      margin: 0 auto 150px;
+      padding-right: 10px;
+      box-sizing: border-box;
+      border: 1px solid #eee;
+      background: transparent url("../image/btn-more.svg") no-repeat 70% 55% / contain;
+      background-size: 16px;
+      cursor: pointer;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .button-more:hover {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- skip : 윤우상 -->
+  <ul class="skip">
+    <li><a href="#news">뉴스 바로가기</a></li>
+    <li><a href="#sponsor">후원정보 바로가기</a></li>
+  </ul>
+  <!-- //skip -->
+
+  <!-- header : 김초연 , 김상돈 -->
+  <header>
+    <h1>StopWar</h1>
+  </header>
+  <!-- //header -->
+
+  <!-- main : 뉴스 -->
+  <main id="news">
+    <!-- 제목 및 검색 : 유현세 -->
+    <!-- 현세님 메인 마진, 패딩, 보더박스 잡아주세요 :) -->
+    <h2>뉴스정보</h2>
+
+    <!-- //제목 및 검색  -->
+
+    <!-- 카테고리 : 조미진, 최성이 -->
+    <!-- //카테고리 -->
+
+    <!-- 뉴스카드 : 윤수영, 박지윤, 지다혜 -->
+    <ul class="news-card-list">
+      <li>
+        <article class="news-card">
+          <div class="card-img-frame">
+            <img src="" alt="" class="card-img">
+          </div>
+          <div class="card-cont">
+            <strong class="card-tit">기사 제목이 길어도 말줄임 표시가 됩니다~ 될까요? 되겠지? 된다! 돼라~</strong>
+            <p class="card-desc">기사 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti modi
+              excepturi harum, quae molestiae nisi at dolore perspiciatis. Molestias non iusto a provident quo
+              reiciendis voluptatum quidem accusantium nesciunt.</p>
+            <span class="card-date">기사 시간</span>
+            <span class="card-source">기사 출처</span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="news-card">
+          <div class="card-img-frame">
+            <img src="" alt="" class="card-img">
+          </div>
+          <div class="card-cont">
+            <strong class="card-tit">기사 제목</strong>
+            <p class="card-desc">기사 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti modi
+              excepturi harum, quae molestiae nisi at dolore perspiciatis. Molestias non iusto a provident quo
+              reiciendis voluptatum quidem accusantium nesciunt.</p>
+            <span class="card-date">기사 시간</span>
+            <span class="card-source">기사 출처</span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="news-card">
+          <div class="card-img-frame">
+            <img src="" alt="" class="card-img">
+          </div>
+          <div class="card-cont">
+            <strong class="card-tit">기사 제목</strong>
+            <p class="card-desc">기사 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti modi
+              excepturi harum, quae molestiae nisi at dolore perspiciatis. Molestias non iusto a provident quo
+              reiciendis voluptatum quidem accusantium nesciunt.</p>
+            <span class="card-date">기사 시간</span>
+            <span class="card-source">기사 출처</span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="news-card">
+          <div class="card-img-frame">
+            <img src="" alt="" class="card-img">
+          </div>
+          <div class="card-cont">
+            <strong class="card-tit">기사 제목</strong>
+            <p class="card-desc">기사 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti modi
+              excepturi harum, quae molestiae nisi at dolore perspiciatis. Molestias non iusto a provident quo
+              reiciendis voluptatum quidem accusantium nesciunt.</p>
+            <span class="card-date">기사 시간</span>
+            <span class="card-source">기사 출처</span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="news-card">
+          <div class="card-img-frame">
+            <img src="" alt="" class="card-img">
+          </div>
+          <div class="card-cont">
+            <strong class="card-tit">기사 제목</strong>
+            <p class="card-desc">기사 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti modi
+              excepturi harum, quae molestiae nisi at dolore perspiciatis. Molestias non iusto a provident quo
+              reiciendis voluptatum quidem accusantium nesciunt.</p>
+            <span class="card-date">기사 시간</span>
+            <span class="card-source">기사 출처</span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="news-card">
+          <div class="card-img-frame">
+            <img src="" alt="" class="card-img">
+          </div>
+          <div class="card-cont">
+            <strong class="card-tit">기사 제목</strong>
+            <p class="card-desc">기사 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti modi
+              excepturi harum, quae molestiae nisi at dolore perspiciatis. Molestias non iusto a provident quo
+              reiciendis voluptatum quidem accusantium nesciunt.</p>
+            <span class="card-date">기사 시간</span>
+            <span class="card-source">기사 출처</span>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <button class="button-more" type="button">더보기</button>
+    <!-- //뉴스카드 -->
+  </main>
+  <!-- //main : 뉴스 -->
+
+  <!-- aside : 후원정보 :박유진, 김경민 -->
+  <aside class="sponsor"></aside>
+  <!-- //aside : 후원정보 -->
+
+  <!-- footer : 지다혜 -->
+  <footer>
+    <!-- 참여자이름, 메일주소 -->
+  </footer>
+  <!-- //footer -->
+
+  <!-- 스크립트 연결 -->
+
+  <!-- // 스크립트 연결 -->
+</body>
+
 </html>
