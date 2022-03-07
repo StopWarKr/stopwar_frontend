@@ -7,8 +7,12 @@
     <title>StopWar</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="../../내가 작성한 파일/main.css" />
+    <!-- <link rel="stylesheet" href="../../내가 작성한 파일/main.css" /> -->
     <style>
+      a {
+        text-decoration: none;
+      }
+
       .sponsor {
         position: absolute;
         width: 396px;
@@ -86,15 +90,15 @@
         margin-top: 13px;
       }
 
-      .sponsor-inform > li:nth-child(n + 2) > div {
+      .sponsor-inform > li:nth-child(n + 2) > a > div {
         margin-left: 18px;
       }
 
-      .sponsor-inform > li:nth-child(n + 2) > div > p {
+      .sponsor-inform > li:nth-child(n + 2) > a > div > p {
         margin: 0;
       }
 
-      .sponsor-inform > li:nth-child(n + 2) > div > p:nth-child(1) {
+      .sponsor-inform > li:nth-child(n + 2) > a > div > p:nth-child(1) {
         font-family: Noto Sans KR;
         font-style: normal;
         font-weight: bold;
@@ -103,7 +107,7 @@
         color: #333333;
       }
 
-      .sponsor-inform > li:nth-child(n + 2) > div > p:nth-child(2) {
+      .sponsor-inform > li:nth-child(n + 2) > a > div > p:nth-child(2) {
         font-family: Noto Sans KR;
         font-style: normal;
         font-weight: normal;
@@ -172,10 +176,12 @@
             />
           </svg>
 
-          <div>
-            <p><strong>에어비엔비</strong></p>
-            <p>피란민 호스팅</p>
-          </div>
+          <a href="https://www.airbnb.co.kr/" target="_blank">
+            <div>
+              <p><strong>에어비엔비</strong></p>
+              <p>피란민 호스팅</p>
+            </div>
+          </a>
         </li>
         <li class="un">
           <svg
@@ -263,10 +269,15 @@
             />
           </svg>
 
-          <div>
-            <p><strong>유엔난민기구</strong></p>
-            <p>우크라이나 긴급구호</p>
-          </div>
+          <a
+            href="https://www.unhcr.or.kr/unhcr/main/index.jsp?utm_source=google&utm_medium=cpc&utm_campaign=unhcr&utm_term=%EB%82%9C%EB%AF%BC%EA%B8%B0%EA%B5%AC&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfxSqeVTSBpF7pXR_PPtTHqDdd0iKFGu0CmIVPhy_omE4XSCVmwULH8aAtEGEALw_wcB"
+            target="_blank"
+          >
+            <div>
+              <p><strong>유엔난민기구</strong></p>
+              <p>우크라이나 긴급구호</p>
+            </div>
+          </a>
         </li>
         <li class="unicef">
           <svg
@@ -370,10 +381,15 @@
             />
           </svg>
 
-          <div>
-            <p><strong>유니세프 글로벌</strong></p>
-            <p>우크라이나 어린이 돕기</p>
-          </div>
+          <a
+            href="https://www.unicef.or.kr/?trackcode=g_kad&utm_source=google&utm_medium=cpc&utm_term=%EC%9C%A0%EB%8B%88%EC%84%B8%ED%94%84&utm_campaign=brand&mac_ad_key=2011231204&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfwI_Cz0dDzvD6Q5RBa3o2uJILMs__fXTJ8mzotVJYt9Wb05r0l6_KYaAtBiEALw_wcB"
+            target="_blank"
+          >
+            <div>
+              <p><strong>유니세프 글로벌</strong></p>
+              <p>우크라이나 어린이 돕기</p>
+            </div>
+          </a>
         </li>
         <li class="savethechild">
           <svg
@@ -389,10 +405,15 @@
             />
           </svg>
 
-          <div>
-            <p><strong>세이브더칠드</strong></p>
-            <p>우크라이나 긴급구호</p>
-          </div>
+          <a
+            href="https://www.sc.or.kr/participate/campaignView.do?NO=29047&utm_source=google_pc&utm_medium=brand_search&utm_campaign=sa_bs&utm_content=%EB%B8%8C%EB%9E%9C%EB%93%9C&utm_term=%5B%EC%84%B8%EC%9D%B4%EB%B8%8C%EB%8D%94%EC%B9%A0%EB%93%9C%EB%9F%B0%5D&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfw0WNVmrv68aNTECL6RjAGeGahIo-VBy0YZ6FhpftRamyodCP5WvhQaAgSrEALw_wcB"
+            target="_blank"
+          >
+            <div>
+              <p><strong>세이브더칠드런</strong></p>
+              <p>우크라이나 긴급구호</p>
+            </div>
+          </a>
         </li>
         <li class="swisscross">
           <svg
@@ -408,10 +429,12 @@
             />
           </svg>
 
-          <div>
-            <p><strong>스위스 적십자</strong></p>
-            <p>우크라이나 비상 키트 돕기</p>
-          </div>
+          <a href="https://www.redcross.or.kr/main/main.do" target="_blank">
+            <div>
+              <p><strong>스위스 적십자</strong></p>
+              <p>우크라이나 비상 키트 돕기</p>
+            </div>
+          </a>
         </li>
       </ul>
     </aside>
