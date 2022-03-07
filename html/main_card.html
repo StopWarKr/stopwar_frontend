@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/font.css" />
   <style>
     .news-card-list li:last-child {
-      margin-bottom: 50px;
+      margin-bottom: 77px;
     }
 
     .news-card {
@@ -86,19 +86,22 @@
     .button-more {
       display: block;
       box-sizing: border-box;
-      width: 180px;
-      height: 32px;
-      margin: 0 auto 150px;
-      padding-right: 10px;
-      border: 1px solid #eee;
-      background: transparent url("../image/btn-more.svg") no-repeat 70% 55% / contain;
+      width: 120px;
+      height: 35px;
+      margin: 0 auto 77px;
+      padding-right: 20px;
+      border: 1px solid #015bbb;
+      border-radius: 20px;
+      background: transparent url("../image/btn-more.svg") no-repeat 75% 55% / contain;
       background-size: 16px;
       cursor: pointer;
-      transition: opacity 0.2s ease-in-out;
+      transition: all 0.2s ease-out;
     }
 
-    .button-more:hover {
-      opacity: 0.5;
+    .button-more:hover, .button-more:active {
+      background: #015bbb url("../image/btn-more-hover.svg") no-repeat 75% 55% / contain;
+      background-size: 16px;
+      color: #fff;
     }
   </style>
 </head>
