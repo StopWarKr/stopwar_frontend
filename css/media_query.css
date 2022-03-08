@@ -17,7 +17,17 @@
   }
 
   .news h2 {
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  .search {
+    width: 200px;
+    height: 3rem;
+  }
+
+  .search-button {
+    top: 0;
+    height: 3px;
   }
 
   .news-category {
