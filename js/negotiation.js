@@ -1,7 +1,7 @@
 const negoBtn = document.querySelector('.nego-btn');
 const newsBox = document.querySelector('.news-card-list');
 
-const getNegotiation = async () => {
+export const getNegotiation = async () => {
   const res = await (
     await fetch('../crawlingData/kr_HistoryNewsData.json')
   ).json();
