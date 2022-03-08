@@ -7,6 +7,10 @@
   }
 
   /* main: 장서령 */
+  .main {
+    margin-bottom: 60px;
+  }
+
   .sponsor {
     display: none;
   }
@@ -32,6 +36,10 @@
 
   .news-category {
     justify-content: center;
+  }
+
+  .news-card-list li:last-child {
+    margin-bottom: 24px;
   }
 
   .news-card {
@@ -120,4 +128,47 @@
     z-index: 1000;
   }
   /* footer: 윤수영 */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0 15px 0;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .sponsor-info-btn {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    background: #ffffff;
+    z-index: 10;
+  }
+
+  .scroll-up-btn {
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .scroll-up-btn::after {
+    top: 8px;
+  }
+
+  .scroll-up-btn span {
+    padding: 12px 0 0;
+  }
 }
