@@ -2,14 +2,49 @@
 
 @media screen and (max-width: 1024px) {
   /* header: 장서령 */
-
+  .header-cont {
+    padding: 20px 0px;
+  }
 
   /* main: 장서령 */
+  .sponsor {
+    display: none;
+  }
 
+  .news {
+    width: 100%;
+    padding: 20px;
+  }
 
+  .news h2 {
+    font-size: 20px;
+  }
+
+  .news-category {
+    justify-content: center;
+  }
+
+  .news-card {
+    margin-bottom: 20px;
+  }
+
+  .card-img-frame {
+    min-width: 144px;
+    margin-right: 10px;
+  }
+
+  .card-cont {
+    width: calc(100% - 150px);
+  }
+
+  .card-tit {
+    font-size: 20px;
+  }
+
+  .button-more {
+    margin: 0 auto 10px;
+  }
   /* modal: 심채영 */
 
-
   /* footer: 윤수영 */
-  
 }
