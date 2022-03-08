@@ -23,6 +23,95 @@ body {
 }
 /* skip: end --------------------------------*/
 
+/* header: start --------------------------------*/
+header {
+  border-bottom: 1px solid #eee;
+}
+.header-cont {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 4rem);
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 28px 0 28px 0;
+  box-sizing: border-box;
+}
+.header-logo a {
+  display: block;
+}
+.select-lang {
+  position: relative;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #eeeeee;
+  color: #333333;
+}
+.lang-txt {
+  position: relative;
+}
+.lang-txt::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../image/icon-lang.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lang-txt::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 50px;
+  width: 8px;
+  height: 4px;
+  background-image: url('../image/icon-arrow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lang-cont {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 120px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  color: #767676;
+  text-align: center;
+}
+.lang-cont.on {
+  display: flex;
+}
+.lang-cont .lang-items {
+  width: 100%;
+  padding: 4px 0;
+  transition: all 0.3s;
+}
+.lang-cont .lang-items:hover {
+  background-color: #f5f5f5;
+  color: #333333;
+}
+/* header: end --------------------------------*/
+
+/* main ----------------------------------------*/
 .main {
   display: flex;
   justify-content: center;
@@ -269,9 +358,6 @@ footer {
   margin-top: 54px;
   width: 160px;
   height: 32px;
-  border: none;
-  background: url('../image/logo-gray.svg') no-repeat center transparent;
-  cursor: pointer;
 }
 
 .scroll-up-btn {
