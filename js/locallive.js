@@ -24,13 +24,13 @@ export const getLocalLive = async () => {
               </div>
               <div class="card-cont">
                 <strong class="card-tit"
-                  >${news.name}</strong
+                  >${news.title}</strong
                 >
                 <p class="card-desc">
-                  ${news.name}
+                  ${`${news.content.slice(0, 100)}...`}
                 </p>
-                <span class="card-date">${news.category}</span>
-                <span class="card-source">${news.category}</span>
+                <span class="card-date">${news.time}</span>
+                <span class="card-source">${news.source}</span>
               </div>
             </a>
           </article>
