@@ -156,8 +156,9 @@ header {
 /* main category : end --------------------------------*/
 /* main card : start --------------------------------*/
 .news {
-  width: 1053px;
+  min-width: 518px;
   box-sizing: border-box;
+  margin: 0 20px;
   padding-top: 3rem;
 }
 
@@ -319,7 +320,7 @@ img {
     contain;
   background-size: 16px;
   cursor: pointer;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ;
 }
 
 .button-more:hover,
@@ -348,7 +349,7 @@ img {
 .sponsor-card {
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
+  width: 270px;
   padding: 20px;
   background-color: #fff;
 }

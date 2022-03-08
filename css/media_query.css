@@ -17,6 +17,7 @@
 
   .news {
     width: 100%;
+    min-width: 100%;
     padding: 20px;
   }
 
@@ -62,8 +63,9 @@
   .button-more {
     margin: 0 auto 10px;
   }
+
   /* modal: 심채영 */
-  .sponsor {
+  /* .sponsor {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -83,7 +85,6 @@
   .sponsor-card {
     display: flex;
     flex-wrap: wrap;
-    /* width: 300px; */
     padding: 14px 20px;
     background-color: #fff;
   }
@@ -96,7 +97,6 @@
     margin-right: 10px;
   }
   .sponsor-card h3 {
-    /* margin-bottom: 5px; */
     font-weight: bold;
     font-size: 20px;
     line-height: 29px;
@@ -126,7 +126,8 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1000;
-  }
+  } */
+
   /* footer: 윤수영 */
   footer {
     display: flex;
@@ -155,6 +156,7 @@
     border: 1px solid #eeeeee;
     background: #ffffff;
     z-index: 10;
+    cursor: pointer;
   }
 
   .scroll-up-btn {
