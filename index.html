@@ -20,7 +20,24 @@
 
     <!-- header : 김초연 , 김상돈 -->
     <header>
-      <h1>StopWar</h1>
+      <div class="header-cont">
+        <h1 class="header-logo">
+          <a href="/">
+            <img src="../image/logo.png" alt="StopWar" />
+          </a>
+        </h1>
+        <div class="select-lang">
+          <button class="lang-btn">
+            <span class="lang-txt">한국어</span>
+          </button>
+          <ul class="lang-cont">
+            <!-- /* lang-cont에 JS로 'on' class 추가해주세요 */ -->
+            <li class="lang-items">한국어</li>
+            <li class="lang-items">English</li>
+            <li class="lang-items">Українська мова</li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- //header -->
 
@@ -194,7 +211,7 @@
       <!-- //main : 뉴스 -->
 
       <!-- aside : 후원정보 :박유진, 김경민 -->
-      <aside class="sponsor">
+      <aside class="sponsor" id="sponsor">
         <h2>후원정보</h2>
         <ul class="sponsor-list">
           <li>
@@ -282,8 +299,8 @@
 
     <!-- footer : 지다혜 -->
     <footer>
+      <img class="footer-logo" src="./image/logo-gray.svg" alt="StopWar" />
       <button type="button" class="scroll-up-btn"><span>TOP</span></button>
-      <button type="button" class="footer-logo"></button>
     </footer>
     <!-- //footer -->
 
