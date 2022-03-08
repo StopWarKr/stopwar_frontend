@@ -4,6 +4,25 @@ html {
 body {
   font-size: 1.6rem;
 }
+
+/* skip: start  --------------------------------*/
+.skip a {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  background-color: #333;
+  color: white;
+  max-width: 300px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.skip a:active,
+.skip a:focus {
+  top: 0;
+}
+/* skip: end --------------------------------*/
+
 .main {
   display: flex;
   justify-content: center;
