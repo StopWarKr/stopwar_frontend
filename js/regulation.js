@@ -1,14 +1,10 @@
-const regulBtn = document.querySelector('.regul-btn');
-
 export const getRegul = async() => { 
   try {
     const res = await fetch('../crawlingData/kr_HistoryNewsData.json');
     const json = await res.json();
     const newsCardList = document.querySelector(".news-card-list");
-    const newsCardLength = newsCardList.children.length;
     newsCardList.textContent = '';
     json.forEach(ele => {
-      console.log(ele)
       const newsCardList = document.querySelector('.news-card-list');
       const title = ele.title;
       const content = ele.content;
@@ -59,8 +55,3 @@ export const getRegul = async() => {
     console.error(err)
   }
 }
-
-
-
-
-regulBtn.addEventListener("click", getRegul);
