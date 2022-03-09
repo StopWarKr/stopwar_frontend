@@ -73,14 +73,18 @@ const getNews = async (category) => {
 
   if (category === 'ALL') {
     for (ele in ALL) {
-      const res = await fetch(`../crawlingData/${ALL[ele]}`);
+      const res = await fetch(
+        `https://stopwarkr.github.io/stopwar_frontend/crawlingData/${ALL[ele]}`,
+      );
       const data = await res.json();
       response.push(...data);
 
       console.log('in all');
     }
   } else {
-    const res = await fetch(`../crawlingData/${ALL[category]}`);
+    const res = await fetch(
+      `https://stopwarkr.github.io/stopwar_frontend/crawlingData/${ALL[category]}`,
+    );
     const data = await res.json();
     response.push(...data);
     console.log('in other');
