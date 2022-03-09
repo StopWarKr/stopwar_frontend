@@ -1,10 +1,10 @@
-export const getRegul = async() => {
+export const getRegul = async() => { 
   try {
-    const regulBtn = document.querySelector('.regul-btn');
     const res = await fetch('../crawlingData/kr_HistoryNewsData.json');
     const json = await res.json();
-
-    json.map(ele => {
+    const newsCardList = document.querySelector(".news-card-list");
+    newsCardList.textContent = '';
+    json.forEach(ele => {
       const newsCardList = document.querySelector('.news-card-list');
       const title = ele.title;
       const content = ele.content;
@@ -55,6 +55,3 @@ export const getRegul = async() => {
     console.error(err)
   }
 }
-
-
-
