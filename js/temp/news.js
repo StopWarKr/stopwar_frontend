@@ -8,6 +8,8 @@ const ALL = {
   후원: 'kr_SponsorNewsData.json',
 };
 
+const currentCategory = [];
+
 // Card 렌더링 함수
 const renderCard = (news) => {
   const newsCard = document.createElement('li');
@@ -37,6 +39,7 @@ const renderCard = (news) => {
   link.appendChild(imgBox);
   imgBox.appendChild(img);
   link.appendChild(contentsBox);
+  link.setAttribute('href', news.link);
   contentsBox.appendChild(title).textContent = news.title;
   contentsBox.appendChild(content).textContent = news.content;
   contentsBox.appendChild(time).textContent = news.time;
@@ -50,6 +53,7 @@ const buttonWrapper = document.querySelector('.news-category');
 
 buttonWrapper.addEventListener('click', (e) => {
   const currentNode = e.target;
+  currentCategory.push(currentNode.textContent);
   if (currentNode.nodeName === 'BUTTON') {
     removeElement();
     getNews(currentNode.textContent);

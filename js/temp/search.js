@@ -1,6 +1,6 @@
 import { removeData } from './locallive.js';
 
-export const search = () => {
+export const search = (category) => {
   const searchInput = document.querySelector('.search-input');
   const searchBtn = document.querySelector('.search-button');
 
@@ -12,7 +12,7 @@ export const search = () => {
     (async function () {
       const res = await (
         await fetch(
-          'https://stopwarkr.github.io/stopwar_frontend/crawlingData/kr_HistoryNewsData.json',
+          `https://stopwarkr.github.io/stopwar_frontend/crawlingData/${category}`,
         )
       ).json();
 
