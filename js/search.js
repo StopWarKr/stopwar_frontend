@@ -11,7 +11,9 @@ export const search = () => {
 
     (async function () {
       const res = await (
-        await fetch('../crawlingData/kr_HistoryNewsData.json')
+        await fetch(
+          'https://stopwarkr.github.io/stopwar_frontend/crawlingData/kr_HistoryNewsData.json',
+        )
       ).json();
 
       res.forEach((news) => {
