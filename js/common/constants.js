@@ -1,4 +1,6 @@
-const BASE_URL = 'https://stopwarkr.github.io/stopwar_frontend/';
+// const BASE_URL = 'https://stopwarkr.github.io/stopwar_frontend/crawlingData/';
+const BASE_URL = 'https://stopwar.co.kr/crawlingData/';
+const IMG_URL = 'https://stopwar.co.kr/';
 
 const AllCategory = {
   역사: 'kr_HistoryNewsData.json',
@@ -10,4 +12,4 @@ const AllCategory = {
   후원: 'kr_SponsorNewsData.json',
 };
 
-export { BASE_URL, AllCategory };
+export { IMG_URL, BASE_URL, AllCategory };
