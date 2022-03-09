@@ -43,6 +43,7 @@ export const closeModal = () => {
 openBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 
+// [이예슬] modal background click -> modal close
 document.addEventListener('mousemove', (e) => {
   const element = document.elementFromPoint(e.pageX, e.pageY);
   const isBg = element.className == 'modal-background';
