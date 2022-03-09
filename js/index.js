@@ -1,8 +1,8 @@
 import { getNews } from './modules/category.js';
 import { search } from './modules/search.js';
 
-//
-const currentCategory = ['ALL'];
+// 최초 ALL 카테고리 렌더링
+window.onload = getNews('ALL');
 
 // 카테고리 클릭 이벤트(이벤트 캡쳐링)
 const buttonWrapper = document.querySelector('.news-category');
@@ -17,8 +17,6 @@ buttonWrapper.addEventListener('click', (e) => {
   // for (let btn in buttonWrapper.children)
 
   const currentNode = e.target;
-  currentCategory.pop();
-  currentCategory.push(currentNode.textContent);
   if (currentNode.nodeName === 'BUTTON') {
     currentNode.parentElement.classList.add('on');
     getNews(currentNode.textContent);
