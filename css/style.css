@@ -73,7 +73,7 @@ header {
   left: -30px;
   width: 20px;
   height: 20px;
-  background-image: url('../image/icon-lang.png');
+  background-image: url('../image/icon-lang.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -139,9 +139,8 @@ header {
 .category-bg {
   border: 1px solid #cccccc;
   border-radius: 4rem;
-
   background: rgba(204, 204, 204, 0.1);
-  color: #767676;
+  color: #6e6e6e;
   transition: all 0.3s;
 }
 .category-bg:hover,
