@@ -48,5 +48,5 @@ document.addEventListener('mousemove', (e) => {
   const element = document.elementFromPoint(e.pageX, e.pageY);
   const isBg = element.className == 'modal-background';
 
-  if (isBg) closeBtn();
+  if (isBg) closeModal();
 });
